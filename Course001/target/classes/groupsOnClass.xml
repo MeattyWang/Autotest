@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="suiteName">
+    <test name = "runAll">
+        <classes>
+            <class name = "com.tuantuan.testng.groups.GroupOnClass1"/>
+            <class name = "com.tuantuan.testng.groups.GroupOnClass2"/>
+            <class name = "com.tuantuan.testng.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+
+    <test name = "runStu" >
+        <groups>
+            <run>
+                <include name = "stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.tuantuan.testng.groups.GroupOnClass1"/>
+            <class name = "com.tuantuan.testng.groups.GroupOnClass2"/>
+            <class name = "com.tuantuan.testng.groups.GroupOnClass3"/>
+        </classes>
+
+    </test>
+</suite>
